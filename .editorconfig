@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# editorconfig.org
+>>>>>>> d8662c3fd980f98b7e19e36f63f23465098ca0ca
+root = true
+
+[*]
+indent_style = tab
+<<<<<<< HEAD
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+=======
+indent_size = 4
+=======
+# editorconfig.org
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+>>>>>>> 193ba9a2547aebad34433995c83e4bafccad2429
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+<<<<<<< HEAD
+>>>>>>> d8662c3fd980f98b7e19e36f63f23465098ca0ca
+=======
+>>>>>>> 193ba9a2547aebad34433995c83e4bafccad2429
