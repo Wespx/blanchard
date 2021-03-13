@@ -1,0 +1,154 @@
+.section-contacts {
+	padding-bottom: 30px;
+}
+
+.section-contacts__container {
+	padding: 0;
+}
+
+.section-contacts__heading {
+	padding: 0 13px;
+	margin-bottom: 12px;
+}
+
+.address-feedback__address {
+	padding: 0 13px;
+	margin-bottom: 15px;
+
+	font-size: 14px;
+	font-style: normal;
+	line-height: 19px;
+	color: #333333;
+}
+
+.address-feedback__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.address-feedback__map-outer {
+	width: 100%;
+	margin-bottom: 23px;
+}
+
+.address-feedback__map-inner {
+	position: relative;
+	padding-top: 100%;
+    height: 0;
+    border: none;
+}
+
+.address-feedback__map {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #eee;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+	display: none;
+}
+
+[class*="controls__control"] {
+	display: none;
+}
+
+.address-feedback__form {
+	padding: 0 14px;
+}
+
+.feedback-form__title {
+	margin-top: 0;
+	margin-bottom: 15px;
+
+	color: #333333;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.feedback-form {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 11px;
+}
+
+.feedback-form__input {
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	border: 1px solid #333333;
+	border-radius: 100px;
+	width: 100%;
+
+	color: #999999;
+	font-size: 16px;
+}
+
+.feedback-form__button {
+	padding: 10px 25px;
+	border: 2px solid #9D5CD0;
+	border-radius: 100px;
+	width: 44%;
+
+	background: transparent;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 16px;
+	text-align: center;
+	color: #9D5CD0;
+
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.address-feedback__contacts {
+	padding: 0 14px;
+}
+
+.contacts__title {
+	margin-top: 0;
+	margin-bottom: 5px;
+
+	color: #333333;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.contacts__links-list {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.contacts__list-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contacts__link {
+    display: block;
+    width: 50px;
+	height: 50px;
+
+	background-repeat: no-repeat;
+
+	transition: opacity 0.2s ease;
+}
+
+.contacts__link_whatsapp {
+	background-image: url("../img/whatsapp.svg");
+}
+
+.contacts__link_telegram {
+	background-image: url("../img/telegram.svg");
+}

@@ -1,0 +1,18 @@
+.section-about {
+	padding-top: 50px;
+	margin-bottom: 40px;
+}
+
+.section-about__heading {
+	margin-bottom: 13px;
+}
+
+.section-about__description {
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 28px;
+
+	color: #333333;
+
+}

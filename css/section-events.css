@@ -1,0 +1,128 @@
+.section-events__heading {
+	margin-left: -3px;
+	margin-bottom: 12px;
+}
+
+.section-events__slider-container {
+	width: 291px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.events-cards {
+	display: flex;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding-left: 0;
+	box-sizing: border-box;
+
+	list-style-type: none;
+}
+
+.events-cards__card {
+	display: block;
+	padding-top: 200px;
+	margin-right: 27px;
+	min-width: 290px;
+
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.events-cards__card-container {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 10px 50px 28px;
+	margin-bottom: -2px;
+	min-height: 483px;
+	border: 1px solid #CACACA;
+	border-top: none;
+}
+
+.events-cards__card_1 {
+	background-image: url("../img/320/Rectangle\ 101.jpg");
+}
+
+.events-cards__card_2 {
+	background-image: url("../img/320/Rectangle\ 101\ \(1\).jpg");
+}
+
+.events-cards__card_3 {
+	background-image: url("../img/320/Rectangle\ 101\ \(2\).jpg");
+}
+
+.events-cards__card_4 {
+	background-image: url("../img/320/Rectangle\ 104.jpg");
+}
+
+.events-cards__card_5 {
+	background-image: url("../img/320/Rectangle\ 104\ \(1\).jpg");
+}
+
+.events-cards__location-time {
+	margin-top: 0;
+	margin-bottom: 5px;
+
+	color: #999999;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: right;
+}
+
+.events-cards__location {
+	display: block;
+}
+
+.events-cards__heading {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	color: #333333;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33px;
+}
+
+.events-cards__description {
+	margin-top: 14%;
+	margin-bottom: auto;
+}
+
+.events-cards__link {
+	border-bottom: 1px solid #9D5CD0;
+	width: 37%;
+
+	color: #9D5CD0;
+	line-height: 1.5;
+}
+
+.section-events__btn {
+	display: none;
+}
+
+.section-events__bullets-container {
+	display: flex;
+	justify-content: center;
+}
+
+.section-events__bullet {
+	display: block;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin-right: 15px;
+	border: none;
+	border-radius: 50%;
+
+	background-color: #CACACA;;
+	cursor: pointer;
+}
+
+.section-events__bullet:last-child {
+	margin-right: 0;
+}
+
+.section-events__bullet_active {
+	background-color: #666666;
+}
