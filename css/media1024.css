@@ -1,0 +1,162 @@
+@media (min-width: 1024px) and (max-width: 1365px) {
+	.section-hero {
+		min-height: 668px;
+	}
+
+	.section-hero__description {
+		max-width: 700px;
+	}
+
+	.section-gallery__container {
+		height: 840px;
+	}
+
+	.section-gallery__filter {
+		max-width: 280px;
+	}
+
+	.section-gallery__slider {
+		padding-top: 85px;
+		padding-bottom: 80px;
+		width: 594px;
+	}
+
+	.gallery-slider__buttons-pagination-container {
+		top: 5px;
+	}
+
+	.gallery-slider__slide {
+		max-height: 280px;
+		max-width: 280px;
+	}
+
+	.section-gallery__footnote {
+		max-width: 280px;
+
+		font-weight: 600;
+	}
+
+	.main__section-catalogue {
+		margin-bottom: 32px;
+	}
+
+	.section-catalogue__locale-list {
+		padding-top: 6px;
+	}
+
+	.catalogue-tabs__person {
+		margin-right: 48px;
+    	width: 47.5%;
+	}
+
+	.person-info__pic {
+		margin-bottom: 29px;
+	}
+
+	.catalogue-tabs__accordion {
+		width: 47.142%;
+		order: 2;
+	}
+
+	.times-accordion__list {
+		width: 105%;
+
+		column-count: 2;
+		column-gap: 40px;
+	}
+
+	.section-events__list {
+		margin-bottom: 17px;
+	}
+
+	.events-cards__card {
+		max-width: 290px;
+	}
+
+	.events-cards__card:not(:nth-child(3n)) {
+		margin-right: 27px;
+	}
+
+	.events-cards__card:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+
+	.section-events__slider-container {
+		max-width: 925px;
+	}
+
+	.events-cards__card-container {
+		padding-right: 15px;
+		padding-left: 35px;
+	}
+
+	.section-publications__container {
+		padding-bottom: 50px;
+	}
+
+	.section-publications__desktop-column-left {
+		width: 33%;
+	}
+
+	.section-publications__desktop-column-right {
+		width: 65%;
+	}
+
+	.categories__label {
+		padding: 0;
+	}
+
+	.section-publications__slider-container {
+		width: 634px;
+		padding-top: 95px;
+		padding-left: 0;
+		margin-left: -7px;
+		margin-right: 0;
+	}
+
+	.publications-slider__img {
+		margin-bottom: 14px;
+	}
+
+	.publications-slider__price {
+		padding-right: 7px;
+	}
+
+	.partners-slider {
+		width: 818px;
+	}
+
+	.partners-slider__button {
+		top: 36%;
+	}
+
+	.partners-slider__slide {
+		padding: 36px 18px 8px;
+		height: 128px;
+		width: 384px;
+	}
+
+	.partners-slider__img {
+		max-height: 57px;
+	}
+
+	.section-contacts__address-feedback {
+		width: 47.5%;
+	}
+
+	.section-contacts__map-outer {
+		width: 52.5%;
+		height: 700px;
+		margin-bottom: 0;
+		order: 2;
+	}
+
+	.address-feedback__form {
+		padding-right: 90px;
+		margin-bottom: 25px;
+	}
+
+	.contacts__list-item:not(:last-child) {
+		margin-right: 30px;
+	}
+}

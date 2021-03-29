@@ -1,11 +1,11 @@
 .section-projects__heading {
 	margin-left: -3px;
-	margin-bottom: 12px;
+	margin-bottom: 17px;
 }
 
 .section-projects__text {
-	margin-bottom: 12px;
-	overflow: hidden;
+	margin-bottom: 20px;
+	max-width: 1080px;
 }
 
 .tooltip {
@@ -91,15 +91,33 @@
 }
 
 .section-projects__link {
+	border-bottom: 1px solid transparent;
+
 	color: #9D5CD0;
 	font-weight: 600;
+
+	outline: none;
+	transition: color 0.15s ease-in, border-color 0.2s ease-in;
+}
+
+.section-projects__link:focus {
+	outline: 2px solid #7943A4;
+}
+
+.section-projects__link:hover {
+	border-color: #9D5CD0;
+}
+
+.section-projects__link:active {
+	border-color: #7943A4;
+	color: #7943A4;
 }
 
 .section-projects__partners-heading {
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 23px;
 
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 600;
 	line-height: 32px;
 }
@@ -109,20 +127,22 @@
 }
 
 .partners-slider {
-	width: 196px;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 .partners-slider__button {
 	position: absolute;
-	top: 25%;
 	height: 30px;
 	width: 30px;
 	border: none;
 	border-radius: 50%;
 
 	background-color: #ECECEC;
+
+	cursor: pointer;
+	outline: none;
+	transition: box-shadow 0.15s ease-in, background-color 0.15s ease-in;
 }
 
 .partners-slider__button::before {
@@ -135,6 +155,30 @@
     border: 1px solid #000;
     border-top: none;
     border-right: none;
+
+	transition: border-color 0.15s ease-in;
+}
+
+.partners-slider__button:focus {
+	background-color: #ECECEC;
+	box-shadow: inset #7943A4 0px 0px 0px 2px;
+}
+
+.partners-slider__button:focus::before {
+	border-color: #000;
+}
+
+.partners-slider__button:hover {
+	background-color: #9D5CD0;
+}
+
+.partners-slider__button:active {
+	background-color: #9D5CD0;
+	box-shadow: inset #D1A9F0 0px 0px 0px 2px;
+}
+
+.partners-slider__button:active::before {
+	border-color: #fff;
 }
 
 .partners-slider__button_prev {
@@ -163,11 +207,12 @@
 }
 
 .partners-slider__slide {
-	min-width: 195px;
-	height: 65px;
-	padding: 17px 25px 5px;
+	width: 264px;
 	margin-right: 21px;
 	border: 1px solid #CACACA;
+
+	filter: grayscale(1);
+	transition: filter 0.3s ease-in-out;
 }
 
 .partners-slider__slide:last-child {
@@ -177,8 +222,17 @@
 .partners-slider__img {
 	display: block;
 	margin: 0 auto;
-	max-height: 37px;
-	height: 65%;
+	height: 60%;
 
+	opacity: 0.3;
 	object-fit: cover;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.partners-slider__slide:hover {
+	filter: none;
+}
+
+.partners-slider__slide:hover .partners-slider__img {
+	opacity: 1;
 }

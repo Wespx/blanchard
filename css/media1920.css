@@ -1,0 +1,367 @@
+@media (min-width: 1366px) {
+	.header__burger {
+		display: none;
+	}
+
+	.header__logo {
+		margin-left: 0;
+	}
+
+	.header__search {
+		position: static;
+		padding: 0;
+		width: auto;
+
+		background: transparent;
+		transform: none;
+	}
+
+	.header__nav {
+		position: static;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: baseline;
+		width: 78%;
+		height: auto;
+		z-index: auto;
+		transform: none;
+	}
+
+	.header__search-button {
+		display: none;
+	}
+
+	.search__button {
+		padding: 25px 16px 17px;
+		margin-right: 4px;
+		width: 20px;
+		height: 20px;
+
+		background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='white'/%3E%3C/svg%3E ");
+	}
+
+	.search__input {
+		min-width: 218px;
+		font-size: 18px;
+		line-height: 25px;
+		padding-top: 5px;
+		padding-left: 0;
+		height: 88%;
+	}
+
+	.search__input::placeholder {
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	.nav {
+		padding: 0;
+		padding-top: 5px;
+	}
+
+	.nav__close {
+		display: none;
+	}
+
+	.nav__navlist {
+		margin-right: auto;
+	}
+
+	.navlist {
+		display: flex;
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.navlist__item:not(:last-child) {
+		margin-right: 62px;
+	}
+
+	.navlist__link {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.nav__enter-link {
+		padding: 0;
+		padding-left: 20px;
+		border: none;
+		max-width: 257px;
+
+		background-position: left 10px;
+		background-size: 13px 13px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.header__desktop-fixed-menu {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 1px;
+
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 10;
+		transform: translateY(100%);
+	}
+
+	.header__desktop-fixed-menu-container {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 auto;
+		padding: 17px 50px 11px;
+		max-width: 1704px;
+	}
+
+	.header__menu-style {
+		display: flex;
+		align-items: center;
+		margin: 0 auto 0 0;
+		padding: 0;
+
+		list-style-type: none;
+	}
+
+	.section-hero {
+		min-height: 700px;
+	}
+
+	.section-hero__container {
+		padding: 140px 75px 0 50px;
+	}
+
+	.section-hero__heading {
+		margin-bottom: 20px;
+
+		font-size: 72px;
+		line-height: 82px;
+	}
+
+	.section-hero__description {
+		margin-bottom: 95px;
+		max-width: 585px;
+	}
+
+	.section-gallery__container {
+		height: 995px;
+	}
+
+	.section-gallery__filter {
+		max-width: 400px;
+		margin-right: 50px;
+	}
+
+	.section-gallery__slider {
+		margin: 0;
+		padding-bottom: 80px;
+		/* width: 1155px; */
+		width: 734px;
+	}
+
+	.gallery-slider__slide {
+		max-height: 350px;
+		max-width: 350px;
+	}
+
+	.section-gallery__footnote {
+		max-width: 350px;
+	}
+
+	.main__section-catalogue {
+		margin-bottom: 32px;
+	}
+
+	.section-catalogue__locale-list {
+		padding-top: 6px;
+	}
+
+	.catalogue-tabs {
+		flex-flow: row nowrap;
+	}
+
+	.catalogue-tabs__person {
+		margin-right: 50px;
+		width: 46.7588%;
+	}
+
+	.catalogue-tabs__accordion {
+		width: 49.74%;
+		order: 2;
+	}
+
+	.times-accordion__list {
+		width: 97%;
+
+		column-count: 3;
+		column-gap: 0;
+	}
+
+	.person-list__item:last-child {
+		margin-bottom: 20px;
+	}
+
+	.section-events__list {
+		margin-bottom: 17px;
+	}
+
+	.events-cards__card {
+		width: 31.2%;
+		min-width: 388.8px;
+		max-width: 500px;
+		padding-top: 303px;
+
+		background-size: 100% 303px;
+	}
+
+	.events-cards__card:not(:nth-child(3n)) {
+		margin-right: 3.11%;
+	}
+
+	.events-cards__card:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+
+	.events-cards__card-container {
+		padding-top: 10px;
+		padding-right: 18px;
+		padding-left: 50px;
+		padding-bottom: 45px;
+
+		min-height: 400px;
+	}
+
+	.events-cards__description {
+		max-width: 400px;
+	}
+
+	.section-publications__desktop-column-left {
+		width: 28.5%;
+	}
+
+	.section-publications__desktop-column-right {
+		width: auto;
+	}
+
+	.categories__label {
+		padding: 0;
+	}
+
+	.section-publications__price {
+		margin-bottom: 30px;
+		margin-left: 4px;
+	}
+
+	.section-publications__slider-container {
+		width: 738px;
+		padding-top: 95px;
+		padding-left: 0;
+		margin-left: -7px;
+		margin-right: 0;
+	}
+
+	.publications-slider__slide {
+		max-width: 350px;
+	}
+
+	.publications-slider__img {
+		margin-bottom: 25px;
+		width: 100%;
+	}
+
+	.publications-slider__price {
+		width: 40%;
+		text-align: right;
+	}
+
+	.tooltip__outer {
+		bottom: 150%;
+	}
+
+	.tooltip__outer::after {
+		display: block;
+	}
+
+	.partners-slider {
+		width: 1000px;
+	}
+
+	.partners-slider__button {
+		top: 39%;
+	}
+
+	.partners-slider__slide {
+		padding: 36px 18px 8px;
+		height: 150px;
+	}
+
+	.partners-slider__img {
+		max-height: 66px;
+	}
+
+	.section-contacts__heading {
+		padding: 0 155px;
+	}
+
+	.section-contacts__address-feedback {
+		width: 35.5%;
+	}
+
+	.address-feedback {
+		padding: 122px 30px 104px 30px;
+	}
+
+	.section-contacts__map-outer {
+		width: 64.5%;
+		height: 700px;
+		margin-bottom: 0;
+		order: 2;
+	}
+
+	.address-feedback__form {
+		margin-bottom: 25px;
+	}
+
+	.feedback-form__button {
+		width: 39%;
+	}
+
+	.contacts__link {
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__social {
+		margin-top: 0;
+	}
+
+	.social__list-item:not(:last-child) {
+		margin-right: 25px;
+	}
+
+	.social__link {
+		width: 42px;
+		height: 42px;
+	}
+}
+
+@media (min-width: 1700px) {
+	.section-gallery__slider {
+		width: 1155px;
+	}
+
+	.partners-slider {
+		width: 1450px;
+	}
+
+	.section-publications__slider-container {
+		width: 1150px;
+	}
+
+	.address-feedback {
+		padding-left: 122px;
+	}
+
+	.address-feedback__form {
+		padding-right: 80px;
+	}
+}

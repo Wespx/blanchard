@@ -1,23 +1,24 @@
 .section-hero {
 	position: relative;
+	min-height: 310px;
 
 	background-color: #000;
 }
 
 .section-hero__container {
-	padding: 35px 31px 45px;
+	padding: 115px 25px 45px 45px;
 }
 
 .section-hero__heading {
 	position: relative;
 	margin-top: 0;
 	margin-bottom: 13px;
+	max-width: 585px;
 
 	font-weight: 700;
-	font-size: 32px;
-	line-height: 36px;
-	text-align: center;
-
+	font-size: 72px;
+	line-height: 82px;
+	text-align: left;
 	color: #FFFFFF;
 
 	z-index: 1;
@@ -26,13 +27,15 @@
 .section-hero__description {
 	position: relative;
 	margin-top: 0;
-	margin-bottom: 40px;
+	margin-bottom: 135px;
+	padding-left: 5px;
 
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: left;
 
 	color: #FFFFFF;
-	text-align: center;
 
 	z-index: 1;
 }
@@ -46,28 +49,33 @@
 
 .subscribe-btn {
 	display: block;
-	padding: 12px 15px;
-	max-width: 200px;
+	padding: 22.6px 35px;
+	margin-left: 5px;
+	max-width: 314px;
 	border-radius: 100px;
 
 	background: #9D5CD0;;
 	font-weight: bold;
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 18px;
+	line-height: 25px;
 	text-align: center;
 	color: #FFFFFF;
 
 	cursor: pointer;
-	transition: background-color 0.2s ease;
+	outline: none;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease-in;
 }
 
-.subscribe-btn:hover,
 .subscribe-btn:focus {
-	background-color: rgba(255, 153, 0, 0.6);
+	box-shadow: inset #D1A9F0 0px 0px 0px 2px, inset #fff 0px 0px 0px 5px;
+}
+
+.subscribe-btn:hover {
+	box-shadow: inset #D1A9F0 0px 0px 0px 3px;
 }
 
 .subscribe-btn:active {
-	background-color: rgba(255, 100, 0, 0.6);
+	background-color: #7943A4;
 }
 
 .section-hero__slider {
@@ -97,17 +105,17 @@
 }
 
 .section-hero__slide_1 {
-	background-image: url("../img/hero-1.jpg");
+	background-image: url("../img/hero/hero-1.jpg");
 }
 
 .section-hero__slide_2 {
-	background-image: url("../img/hero-2.jpg");
+	background-image: url("../img/hero/hero-2.jpg");
 
 	animation-delay: 10s;
 }
 
 .section-hero__slide_3 {
-	background-image: url("../img/hero-3.jpg");
+	background-image: url("../img/hero/hero-3.jpg");
 
 	animation-delay: 20s;
 }

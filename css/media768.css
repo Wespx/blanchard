@@ -1,0 +1,188 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+	.section-hero {
+		min-height: 668px;
+	}
+
+	.section-gallery__filter {
+		max-width: 280px;
+	}
+
+	.section-gallery__slider {
+		margin-bottom: 30px;
+		padding-top: 80px;
+		padding-bottom: 0;
+		width: 668px;
+	}
+
+	.gallery-slider__slide {
+		max-height: 280px;
+	}
+
+	.section-gallery__footnote {
+		order: 5;
+	}
+
+	.main__section-catalogue {
+		margin-bottom: 68px;
+	}
+
+	/* .section-catalogue__container {
+		padding-left: 0;
+	} */
+
+	.section-catalogue__heading {
+		margin-right: auto;
+	}
+
+	.section-catalogue__locale-list {
+		margin-bottom: 0;
+	}
+
+	.locale-list__item:not(:last-child) {
+		margin-right: 54px;
+	}
+
+	.catalogue-tabs {
+		display: block;
+	}
+
+	.catalogue-tabs__text {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	.times-accordion__list-wrap {
+		margin-top: 28px;
+	}
+
+	.times-accordion__list {
+		width: 103%;
+
+		column-count: 3;
+		column-gap: 34px;
+	}
+
+	.person-list__item:last-child {
+		margin-bottom: 1px;
+	}
+
+	.main__section-events {
+		margin-bottom: 82px;
+	}
+
+	.events-cards__card {
+		max-width: 317px;
+	}
+
+	.events-cards__card:nth-child(odd) {
+		margin-right: 34px;
+	}
+
+	.events-cards__card:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+
+	.section-events__slider-container {
+		max-width: 669px;
+	}
+
+	.events-cards__card-container {
+		padding-right: 19px;
+		padding-left: 35px;
+	}
+
+	.section-publications__container {
+		display: block;
+		padding-bottom: 30px;
+	}
+
+	.section-publications__categories {
+		margin-bottom: 27px;
+	}
+
+	.categories__container {
+		display: flex;
+	}
+
+	.categories__label {
+		padding: 0;
+	}
+
+	.categories__col:first-child {
+		margin-right: 57px;
+	}
+
+	.section-publications__desktop-column-left {
+		margin-bottom: 22px;
+	}
+
+	.section-publications__price {
+		margin-left: 0;
+	}
+
+	.section-publications__slider-container {
+		width: 640px;
+		padding-top: 80px;
+		padding-left: 25px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.publications-slider__buttons-pagination-container {
+		top: 0;
+	}
+
+	.publications-slider__img {
+		margin-bottom: 15px;
+	}
+
+	.section-projects__heading {
+		margin-bottom: 15px;
+	}
+
+	.section-projects__text {
+		margin-bottom: 60px;
+	}
+
+	.section-projects__partners-heading {
+		margin-left: -3px;
+		margin-bottom: 28px;
+	}
+
+	.partners-slider {
+		width: 562px;
+	}
+
+	.partners-slider__button {
+		top: 36%;
+	}
+
+	.partners-slider__slide {
+		padding: 30px 18px 8px;
+		height: 106px;
+	}
+
+	.partners-slider__img {
+		max-height: 57px;
+	}
+
+	.section-contacts__address-feedback {
+		width: 56%;
+	}
+
+	.section-contacts__map-outer {
+		width: 44%;
+		height: 700px;
+		margin-bottom: 0;
+		order: 2;
+	}
+
+	.address-feedback__form {
+		padding-right: 34px;
+		margin-bottom: 25px;
+	}
+
+	.contacts__list-item:not(:last-child) {
+		margin-right: 30px;
+	}
+}

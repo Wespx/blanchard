@@ -48,8 +48,7 @@
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
-	background-color: #333;
-	color: #7943A4;
+	background-color: transparent;
 }
 
 .choices[data-type*=select-one]:after {
@@ -79,5 +78,9 @@
 }
 
 .choices:last-child {
-	margin-bottom: 120px;
+	margin-bottom: 90px;
+}
+
+.choices__list--dropdown .is-selected {
+    display: none;
 }

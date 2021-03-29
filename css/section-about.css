@@ -1,18 +1,17 @@
-.section-about {
-	padding-top: 50px;
-	margin-bottom: 40px;
+.section-about__container {
+	padding-top: 80px;
 }
 
 .section-about__heading {
-	margin-bottom: 13px;
+	margin-bottom: 17px;
 }
 
 .section-about__description {
 	margin: 0;
+	padding-left: 2px;
+	max-width: 1080px;
 
-	font-size: 14px;
-	line-height: 28px;
-
+	font-size: 16px;
+	line-height: 32px;
 	color: #333333;
-
 }

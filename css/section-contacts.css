@@ -1,51 +1,49 @@
-.section-contacts {
-	padding-bottom: 30px;
-}
-
 .section-contacts__container {
+	display: flex;
+	flex-flow: row wrap;
 	padding: 0;
+	max-width: none;
 }
 
 .section-contacts__heading {
-	padding: 0 13px;
-	margin-bottom: 12px;
+	padding: 0 45px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.address-feedback {
+	border: 1px solid #CACACA;
+	padding: 122px 10px 104px 35px;
 }
 
 .address-feedback__address {
 	padding: 0 13px;
-	margin-bottom: 15px;
+	margin-bottom: 28px;
 
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
-	line-height: 19px;
+	line-height: 32px;
 	color: #333333;
 }
 
 .address-feedback__title {
 	font-weight: 600;
-	font-size: 18px;
-	line-height: 23px;
+	font-size: 24px;
+	line-height: 36px;
 }
 
-.address-feedback__map-outer {
+.section-contacts__map-outer {
 	width: 100%;
 	margin-bottom: 23px;
+	overflow-x: hidden;
 }
 
-.address-feedback__map-inner {
-	position: relative;
-	padding-top: 100%;
-    height: 0;
-    border: none;
+.section-contacts__map-inner {
+    height: 100%;
 }
 
-.address-feedback__map {
-	position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #eee;
+.section-contacts__map {
+	height: 100%;
 }
 
 [class*="ground-pane"] {
@@ -66,11 +64,11 @@
 
 .feedback-form__title {
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 0;
 
 	color: #333333;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 24px;
 	line-height: 32px;
 }
 
@@ -81,7 +79,7 @@
 }
 
 .feedback-form__input {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	padding: 10px 25px;
 	border: 1px solid #333333;
 	border-radius: 100px;
@@ -91,21 +89,37 @@
 	font-size: 16px;
 }
 
+.feedback-form .feedback-form__input:last-of-type {
+	margin-bottom: 20px;
+}
+
 .feedback-form__button {
-	padding: 10px 25px;
+	padding: 16px 30px;
+	width: 47%;
 	border: 2px solid #9D5CD0;
 	border-radius: 100px;
-	width: 44%;
 
 	background: transparent;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 700;
-	line-height: 16px;
+	line-height: 25px;
 	text-align: center;
 	color: #9D5CD0;
 
+	outline: none;
 	cursor: pointer;
-	transition: opacity 0.2s ease;
+	transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in, color 0.2s ease-in;
+}
+
+.feedback-form__button:focus,
+.feedback-form__button:hover {
+	background-color: #9D5CD0;
+	color: #fff;
+}
+
+.feedback-form__button:active {
+	box-shadow: inset #D1A9F0 0 0 0 2px;
+	color: #fff;
 }
 
 .address-feedback__contacts {
@@ -114,10 +128,10 @@
 
 .contacts__title {
 	margin-top: 0;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 
 	color: #333333;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 400;
 	line-height: 32px;
 }
@@ -131,18 +145,34 @@
 	list-style-type: none;
 }
 
+.contacts__list-item {
+	border-radius: 50%;
+}
+
 .contacts__list-item:not(:last-child) {
     margin-right: 20px;
 }
 
 .contacts__link {
     display: block;
-    width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
 
 	background-repeat: no-repeat;
+	background-size: 100%;
 
-	transition: opacity 0.2s ease;
+	outline: none;
+	transition: opacity 0.2s ease, box-shadow 0.2s ease-in;
+}
+
+.contacts__link:focus,
+.contacts__link:hover {
+	box-shadow: #D1A9F0 0 0 0 4px;
+}
+
+.contacts__link:active {
+	opacity: 0.4;
 }
 
 .contacts__link_whatsapp {
@@ -151,4 +181,23 @@
 
 .contacts__link_telegram {
 	background-image: url("../img/telegram.svg");
+}
+
+.address-feedback__address_mobile {
+	display: none;
+}
+
+.feedback-form__label {
+	margin: 0;
+	opacity: 0;
+
+	color: #ff0000;
+	font-size: 12px;
+	line-height: 1.5;
+
+	transition: opacity 0.15s ease-in;
+}
+
+.feedback-form__label_visible {
+	opacity: 1;
 }
