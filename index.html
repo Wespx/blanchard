@@ -51,67 +51,72 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container header__container">
-            <button class="burger header__burger js-burger">
-                <span class="burger__line"></span>
-            </button>
+		<div class="header__header-top-wrap">
+			<div class="container header__container">
+				<button class="burger header__burger js-burger" type="button" aria-label="Открыть меню">
+					<span class="burger__line"></span>
+				</button>
 
-			<picture class="logo header__logo">
-				<source srcset="img/logo-320.png" media="(max-width: 767px)">
-				<img src="img/logo-normal.png" alt="Логотип компании Blanchard">
-			</picture>
+				<picture class="logo header__logo">
+					<source srcset="img/logo-320.png" media="(max-width: 767px)">
+					<img src="img/logo-normal.png" alt="Логотип компании Blanchard">
+				</picture>
 
-			<nav class="nav header__nav js-burgerMenu">
-				<button class="nav__close js-burgerClose"></button>
+				<nav class="nav header__nav js-burgerMenu">
+					<button class="nav__close js-burgerClose" type="button" aria-label="Закрыть меню"></button>
 
-				<ul class="navlist nav__navlist">
-					<li class="navlist__item">
-						<a class="navlist__link" href="#about">
-							О нас
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#gallery">
-							Галерея
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#catalogue">
-							Каталог
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#events">
-							События
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#publications">
-							Издания
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#projects">
-							Проекты
-						</a>
-					</li>
-					<li class="navlist__item">
-						<a class="navlist__link" href="#contacts">
-							Контакты
-						</a>
-					</li>
-				</ul>
+					<ul class="navlist nav__navlist">
+						<li class="navlist__item">
+							<a class="navlist__link" href="#about">
+								О нас
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#gallery">
+								Галерея
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#catalogue">
+								Каталог
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#events">
+								События
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#publications">
+								Издания
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#projects">
+								Проекты
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a class="navlist__link" href="#contacts">
+								Контакты
+							</a>
+						</li>
+					</ul>
 
-				<a href="#" class="nav__enter-link">Войти</a>
-			</nav>
+					<a href="#" class="nav__enter-link">Войти</a>
+				</nav>
+				<button class="header__search-button js-expandSearchBtn" aria-label="Раскрыть форму поиска" type="button"></button>
+			</div>
+		</div>
 
-			<div class="header__desktop-fixed-menu">
-				<div class="header__desktop-fixed-menu-container">
-					<ul class="menu-style header__menu-style">
-						<li class="menu-style__item">
-							<button class="menu-style__button">Реализм</button>
+		<div class="header__desktop-fixed-menu">
+			<div class="header__desktop-fixed-menu-container">
+				<ul class="menu-style header__menu-style">
+					<li class="menu-style__item">
+						<button class="menu-style__button" type="button">Реализм</button>
 
-							<div class="menu-style__style-list-container">
+						<div class="menu-style__style-list-container">
+							<div class="menu-style__style-list-wrap">
 								<ul class="style-list menu-style__list" data-simplebar>
 									<li class="style-list__item style-list__item_tintoretto">
 										<a href="#" class="style-list__link">Тинторетто</a>
@@ -139,12 +144,14 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</div>
+					</li>
 
-						<li class="menu-style__item">
-							<button class="menu-style__button">Импрессионизм</button>
+					<li class="menu-style__item">
+						<button class="menu-style__button">Импрессионизм</button>
 
-							<div class="menu-style__style-list-container">
+						<div class="menu-style__style-list-container">
+							<div class="menu-style__style-list-wrap">
 								<ul class="style-list menu-style__list" data-simplebar>
 									<li class="style-list__item style-list__item_mone">
 										<a href="#" class="style-list__link">Моне</a>
@@ -160,12 +167,14 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</div>
+					</li>
 
-						<li class="menu-style__item">
-							<button class="menu-style__button">Постимпрессионизм</button>
+					<li class="menu-style__item">
+						<button class="menu-style__button">Постимпрессионизм</button>
 
-							<div class="menu-style__style-list-container">
+						<div class="menu-style__style-list-container">
+							<div class="menu-style__style-list-wrap">
 								<ul class="style-list menu-style__list" data-simplebar>
 									<li class="style-list__item style-list__item_vangogh">
 										<a href="#" class="style-list__link">Ван Гог</a>
@@ -181,12 +190,14 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</div>
+					</li>
 
-						<li class="menu-style__item">
-							<button class="menu-style__button">Авангард</button>
+					<li class="menu-style__item">
+						<button class="menu-style__button">Авангард</button>
 
-							<div class="menu-style__style-list-container">
+						<div class="menu-style__style-list-container">
+							<div class="menu-style__style-list-wrap">
 								<ul class="style-list menu-style__list" data-simplebar>
 									<li class="style-list__item  style-list__item_kandinsky">
 										<a href="#" class="style-list__link">Кандинский</a>
@@ -202,12 +213,14 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</div>
+					</li>
 
-						<li class="menu-style__item">
-							<button class="menu-style__button">Футуризм</button>
+					<li class="menu-style__item">
+						<button class="menu-style__button">Футуризм</button>
 
-							<div class="menu-style__style-list-container">
+						<div class="menu-style__style-list-container">
+							<div class="menu-style__style-list-wrap">
 								<ul class="style-list menu-style__list" data-simplebar>
 									<li class="style-list__item  style-list__item_karra">
 										<a href="#" class="style-list__link">Карра</a>
@@ -223,18 +236,16 @@
 									</li>
 								</ul>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</li>
+				</ul>
 
-					<form class="search header__search js-searchForm" name="Поиск по сайту" action="https://echo.htmlacademy.ru" method="get">
-						<input class="search__input" type="text" placeholder="Поиск по сайту">
-						<button class="search__button" aria-label="Поиск по сайту" type="submit"></button>
-					</form>
-				</div>
+				<form class="search header__search js-searchForm" name="Поиск по сайту" action="https://echo.htmlacademy.ru" method="get">
+					<input class="search__input" type="text" placeholder="Поиск по сайту">
+					<button class="search__button" aria-label="Поиск по сайту" type="submit"></button>
+				</form>
 			</div>
-
-			<button class="header__search-button js-expandSearchBtn" aria-label="Раскрыть форму поиска" type="button"></button>
-        </div>
+		</div>
     </header>
 
 	<h1 class="visually-hidden">Художественная галерея Blanchard</h1>
@@ -254,9 +265,9 @@
 				<a href="#contacts" class="subscribe-btn section-hero__subscribe">Подписаться на рассылку</a>
 
 				<div class="section-hero__slider">
-					<div class="section-hero__slide section-hero__slide_1"></div>
-					<div class="section-hero__slide section-hero__slide_2"></div>
-					<div class="section-hero__slide section-hero__slide_3"></div>
+					<div class="section-hero__slide section-hero__slide_1" role="img" aria-label="Картина, изображение средневекового замка"></div>
+					<div class="section-hero__slide section-hero__slide_2" role="img" aria-label="Картина, изображение библейских событий"></div>
+					<div class="section-hero__slide section-hero__slide_3" role="img" aria-label="Картина, изображение леса"></div>
 				</div>
 			</div>
 		</section>
@@ -289,9 +300,9 @@
 				</h2>
 
 				<label class="section-gallery__filter filter">
-					<div class="filter__description">
+					<span class="filter__description">
 						Фильтровать по:
-					</div>
+					</span>
 
 					<select class="filter__select js-gallerySelect">
 						<option value="author">Автор</option>
@@ -302,39 +313,95 @@
 
 				<div class="section-gallery__slider gallery-slider js-gallerySlider">
 					<div class="gallery-slider__slider-wrap swiper-wrapper">
-						<img src="img/gallery/gallery-1.jpg" alt="Картина К.Малевича 'Женщина с граблями'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-2.jpg" alt="Картина К.Малевича 'Торс'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-3.jpg" alt="Картина К.Малевича 'Уборка ржи'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-4.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-5.jpg" alt="Картина К.Малевича 'Точильщик'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-6.jpg" alt="Картина К.Малевича 'Крестьянин в полях'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-7.jpg" alt="Картина К.Малевича 'Иконоборец'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-8.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-9.jpg" alt="Картина К.Малевича 'Меридиан'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-10.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-11.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-12.jpg" alt="Картина К.Малевича 'Зимний пейзаж'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-13.jpg" alt="Картина К.Малевича 'Женщина с граблями'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-14.jpg" alt="Картина К.Малевича 'Портрет Клюна'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-15.jpg" alt="Картина К.Малевича 'На жатву'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-16.jpg" alt="Картина К.Малевича 'Спортсмены'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-17.jpg" alt="Картина Ж.О.Фрагонара 'Пастушка'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-18.jpg" alt="Картина П.Сезанна 'Купальщицы'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-19.jpg" alt="Картина И.Крамского 'Незнакомка'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-20.jpg" alt="Картина К.Е.Маковского 'Русалки'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-21.jpg" alt="Картина Г.И.Семирадского 'Игра в кости'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-22.jpg" alt="Картина С.Ботичелли 'Весна'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-23.jpg" alt="Картина К.П.Брюллова 'Итальянский полдень'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-24.jpg" alt="Картина К.Лоррена 'Отплытие царицы савской'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-25.jpg" alt="Картина Я.Хёйсума 'Цветы'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-26.jpg" alt="Картина П.Брейгеля 'Падение Икара'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-27.jpg" alt="Картина П.П.Рубенса 'Самсон и Далила'" class="gallery-slider__slide swiper-slide">
-						<img src="img/gallery/gallery-28.jpg" alt="Картина К.Ж.Верне 'Река с рыбаками'" class="gallery-slider__slide swiper-slide">
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-1.jpg" alt="Картина К.Малевича 'Женщина с граблями'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-2.jpg" alt="Картина К.Малевича 'Торс'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-3.jpg" alt="Картина К.Малевича 'Уборка ржи'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-4.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-5.jpg" alt="Картина К.Малевича 'Точильщик'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-6.jpg" alt="Картина К.Малевича 'Крестьянин в полях'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-7.jpg" alt="Картина К.Малевича 'Иконоборец'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-8.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-9.jpg" alt="Картина К.Малевича 'Меридиан'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-10.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-11.jpg" alt="Картина К.Малевича 'Супрематическая композиция'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-12.jpg" alt="Картина К.Малевича 'Зимний пейзаж'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-13.jpg" alt="Картина К.Малевича 'Женщина с граблями'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-14.jpg" alt="Картина К.Малевича 'Портрет Клюна'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-15.jpg" alt="Картина К.Малевича 'На жатву'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-16.jpg" alt="Картина К.Малевича 'Спортсмены'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-17.jpg" alt="Картина Ж.О.Фрагонара 'Пастушка'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-18.jpg" alt="Картина П.Сезанна 'Купальщицы'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-19.jpg" alt="Картина И.Крамского 'Незнакомка'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-20.jpg" alt="Картина К.Е.Маковского 'Русалки'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-21.jpg" alt="Картина Г.И.Семирадского 'Игра в кости'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-22.jpg" alt="Картина С.Боттичелли 'Весна'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-23.jpg" alt="Картина К.П.Брюллова 'Итальянский полдень'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-24.jpg" alt="Картина К.Лоррена 'Отплытие царицы савской'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-25.jpg" alt="Картина Я.Хёйсума 'Цветы'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-26.jpg" alt="Картина П.Брейгеля 'Падение Икара'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-27.jpg" alt="Картина П.П.Рубенса 'Самсон и Далила'" class="gallery-slider__img">
+						</div>
+						<div class="gallery-slider__slide swiper-slide" tabindex="0">
+							<img src="img/gallery/gallery-28.jpg" alt="Картина К.Ж.Верне 'Река с рыбаками'" class="gallery-slider__img">
+						</div>
 					</div>
 					<div class="gallery-slider__buttons-pagination-container">
-						<button class="gallery-slider__button gallery-slider__button_prev js-galleryPrev"></button>
+						<button class="gallery-slider__button gallery-slider__button_prev js-galleryPrev" type="button"></button>
 						<div class="gallery-slider__pagination js-galleryPagination"></div>
-						<button class="gallery-slider__button gallery-slider__button_next js-galleryNext"></button>
+						<button class="gallery-slider__button gallery-slider__button_next js-galleryNext" type="button"></button>
 					</div>
 				</div>
 
@@ -353,23 +420,23 @@
 
 				<ul class="section-catalogue__locale-list locale-list">
 					<li class="locale-list__item">
-						<button class="locale-list__button locale-list__button_fr js-tabsFR"></button>
+						<button class="locale-list__button locale-list__button_fr js-tabsFR" type="button" aria-label="Художники Франции"></button>
 					</li>
 
 					<li class="locale-list__item">
-						<button class="locale-list__button locale-list__button_de js-tabsDE"></button>
+						<button class="locale-list__button locale-list__button_de js-tabsDE" type="button" aria-label="Художники Германии"></button>
 					</li>
 
 					<li class="locale-list__item">
-						<button class="locale-list__button locale-list__button_it locale-list__button_active js-tabsIT"></button>
+						<button class="locale-list__button locale-list__button_it locale-list__button_active js-tabsIT" type="button" aria-label="Художники Италии"></button>
 					</li>
 
 					<li class="locale-list__item">
-						<button class="locale-list__button locale-list__button_ru js-tabsRU"></button>
+						<button class="locale-list__button locale-list__button_ru js-tabsRU" type="button" aria-label="Художники России"></button>
 					</li>
 
 					<li class="locale-list__item">
-						<button class="locale-list__button locale-list__button_be js-tabsBE"></button>
+						<button class="locale-list__button locale-list__button_be js-tabsBE" type="button" aria-label="Художники Бельгии"></button>
 					</li>
 				</ul>
 
@@ -406,6 +473,7 @@
 							</p>
 						</div>
 				</div>
+			</div>
 		</section>
 
 		<section class="section-events main__section-events" id="events">
@@ -616,9 +684,9 @@
 
 						<div class="price__container">
 							От
-							<input class="price__input" type="number">
+							<input class="price__input" type="number" min="0">
 							до
-							<input class="price__input" type="number">
+							<input class="price__input" type="number" min="0">
 							руб.
 						</div>
 					</div>
@@ -722,7 +790,7 @@
 					из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
 					информационно-пропагандистское
 					<div class="section-projects__tooltip tooltip">
-						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x"></button>
+						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x" aria-label="Открыть всплывающую подсказку"></button>
 						<div class="tooltip__outer js-projectsTooltip">
 							<p class="tooltip__inner">Пример современных тенденций - современная методология разработки </p>
 						</div>
@@ -731,14 +799,14 @@
 					экономической целесообразности принимаемых решений. И нет сомнений, что
 					действия представителей оппозиции могут быть рассмотрены
 					<div class="section-projects__tooltip tooltip">
-						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x"></button>
+						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x" aria-label="Открыть всплывающую подсказку"></button>
 						<div class="tooltip__outer js-projectsTooltip">
 							<p class="tooltip__inner">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</p>
 						</div>
 					</div>
 					исключительно в разрезе маркетинговых и финансовых
 					<div class="section-projects__tooltip tooltip">
-						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x"></button>
+						<button class="tooltip__marker js-projectsTooltipMarker" data-content="x" aria-label="Открыть всплывающую подсказку"></button>
 						<div class="tooltip__outer js-projectsTooltip">
 							<p class="tooltip__inner">В стремлении повысить качество</p>
 						</div>
@@ -816,12 +884,13 @@
 					<div class="address-feedback__form feedback-form">
 						<h3 class="feedback-form__title">Заказать обратный звонок</h3>
 
-						<form action="https://jsonplaceholder.typicode.com/posts" name="client-contacts" method="post" class="feedback-form">
+						<form action="mail.php" enctype="multipart/form-data" name="client-contacts" method="POST" class="feedback-form" id="feedback-form">
+							<input class="visually-hidden" type="hidden" name="form_subject" value="Заявка на обратную связь Blanchard">
 							<label class="feedback-form__label" for="name">Как вас зовут?</label>
-							<input class="feedback-form__input" id="name" type="text" placeholder="Имя*" name="applicant-name" required>
+							<input class="feedback-form__input" id="name" type="text" placeholder="Имя*" name="Имя" required>
 
 							<label class="feedback-form__label" for="phone">Укажите ваш телефон</label>
-							<input class="feedback-form__input" id="phone" type="tel" placeholder="Телефон*" name="applicant-phone" required>
+							<input class="feedback-form__input" id="phone" type="tel" placeholder="Телефон*" name="Телефон" required>
 
 							<button type="submit" class="feedback-form__button">Заказать</button>
 						</form>
@@ -864,5 +933,15 @@
 			</ul>
 		</div>
 	</footer>
+
+	<div class="js-modal" id="modal" aria-hidden="true">
+		<div class="gallery__modal-wrap">
+			<div class="gallery__modal-content" id="gallery-modal" role="dialog" aria-modal="true">
+
+			</div>
+		</div>
+
+		<div class="js-modal-overlay" id="modal-overlay"></div>
+	</div>
 </body>
 </html>

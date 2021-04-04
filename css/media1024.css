@@ -26,7 +26,7 @@
 	}
 
 	.gallery-slider__slide {
-		max-height: 280px;
+		height: 280px;
 		max-width: 280px;
 	}
 
@@ -34,6 +34,15 @@
 		max-width: 280px;
 
 		font-weight: 600;
+	}
+
+	.gallery__modal-content {
+		max-width: 594px;
+		height: 594px;
+	}
+
+	.gallery__modal-img {
+		max-width: 294px;
 	}
 
 	.main__section-catalogue {

@@ -4,7 +4,7 @@ const smoothScroll = () => {
 	const scrollAnimation = (hash, time) => {
 		const coordsElem = document.querySelector(hash).getBoundingClientRect().top;
 
-		if (!window.safari) {
+		if (navigator.vendor !== 'Apple Computer, Inc.') {
 			window.scrollBy({
 				top: coordsElem,
 				behavior: 'smooth'

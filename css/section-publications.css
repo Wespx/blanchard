@@ -158,10 +158,6 @@
 	background-color: #646464;
 }
 
-.categories__label:hover .categories__text {
-	color: #7943A4;
-}
-
 .section-publications__slider-container {
 	position: relative;
 	overflow: hidden;
@@ -272,10 +268,6 @@
 	border-color: #000;
 }
 
-.publications-slider__pagination-button:hover {
-	background-color: #9D5CD0;
-}
-
 .publications-slider__pagination-button:active {
 	background-color: #9D5CD0;
 	box-shadow: inset #D1A9F0 0px 0px 0px 2px;
@@ -382,8 +374,7 @@
 	transition: background-color 0.2s ease, box-shadow 0.2s ease-in;
 }
 
-.publications-slider__button:focus,
-.publications-slider__button:hover {
+.publications-slider__button:focus {
 	background-color: #9D5CD0;
 }
 

@@ -70,6 +70,16 @@
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 32px;
+
+	transition: color 0.2s ease-in;
+}
+
+.feedback-form__title_success {
+	color: #008000;
+}
+
+.feedback-form__title_error {
+	color: #ff0000;
 }
 
 .feedback-form {
@@ -111,8 +121,7 @@
 	transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in, color 0.2s ease-in;
 }
 
-.feedback-form__button:focus,
-.feedback-form__button:hover {
+.feedback-form__button:focus {
 	background-color: #9D5CD0;
 	color: #fff;
 }
@@ -166,8 +175,7 @@
 	transition: opacity 0.2s ease, box-shadow 0.2s ease-in;
 }
 
-.contacts__link:focus,
-.contacts__link:hover {
+.contacts__link:focus {
 	box-shadow: #D1A9F0 0 0 0 4px;
 }
 

@@ -49,8 +49,7 @@
 	transition: opacity 0.2s ease, box-shadow 0.2s ease-in;
 }
 
-.social__link:focus,
-.social__link:hover {
+.social__link:focus {
 	box-shadow: rgb(121, 67, 164) 0 0 0 4px;
 }
 

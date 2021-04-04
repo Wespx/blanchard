@@ -34,6 +34,11 @@ const sliders = () => {
 				slidesPerGroup: 2,
 				spaceBetween: 50
 			}
+		},
+
+		a11y: {
+			prevSlideMessage: 'Предыдущий слайд',
+			nextSlideMessage: 'Следующий слайд'
 		}
 	});
 
@@ -63,6 +68,11 @@ const sliders = () => {
 				slidesPerView: 3,
 				spaceBetween: 50
 			}
+		},
+
+		a11y: {
+			prevSlideMessage: 'Предыдущий слайд',
+			nextSlideMessage: 'Следующий слайд'
 		}
 	});
 
@@ -182,6 +192,11 @@ const sliders = () => {
 					slidesPerView: 3,
 					spaceBetween: 50
 				}
+			},
+
+			a11y: {
+				prevSlideMessage: 'Предыдущий слайд',
+				nextSlideMessage: 'Следующий слайд'
 			}
 		});
 	};

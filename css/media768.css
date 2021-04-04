@@ -15,11 +15,20 @@
 	}
 
 	.gallery-slider__slide {
-		max-height: 280px;
+		height: 280px;
 	}
 
 	.section-gallery__footnote {
 		order: 5;
+	}
+
+	.gallery__modal-content {
+		max-width: 698px;
+		height: 594px;
+	}
+
+	.gallery__modal-img {
+		max-width: 301px;
 	}
 
 	.main__section-catalogue {

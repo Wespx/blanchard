@@ -117,10 +117,6 @@
 	outline: 2px solid #7943A4;
 }
 
-.events-cards__link:hover {
-	font-weight: 700;
-}
-
 .events-cards__link:active {
 	color: #7943A4;
 }

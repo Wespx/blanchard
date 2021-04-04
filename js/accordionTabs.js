@@ -101,11 +101,12 @@ const accordionTabs = () => {
 			const lastYear = i < ages.length - 1 ? `по <time datetime="${year + 99}">${year + 99}</time> гг.` : '';
 			const activeBtn = sectionCatalogue.querySelector('.locale-list__button_active');
 			const dnone = activeBtn.classList.contains(`js-tabs${artists.country}`) ? '' : 'js-dnone';
+			const firstItem = !(age === 'XV' && artists === artistsIT ) ? '' : 'times-accordion__item_active';
 			const firstList = !(age === 'XV' && artists === artistsIT ) ? '' : 'person-list_active'; //для соответствия макету
 			const firstActiveButton = !(age === 'XV' && artists === artistsIT ) ? '' : 'times-accordion__button_active';
 
 			accordion.insertAdjacentHTML('beforeend',
-				`<li class="times-accordion__item ${dnone} js-item${artists.country}" tabindex="0">
+				`<li class="times-accordion__item ${dnone} js-item${artists.country} ${firstItem}" tabindex="0">
 					<p class="times-accordion__text">
 					С <time datetime="${year}">${year}</time>
 					${lastYear}
@@ -144,6 +145,8 @@ const accordionTabs = () => {
 	//МЕХАНИЗМ ТАБОВ
 	const changeTab = country => {
 		const accordionItems = sectionCatalogue.querySelectorAll(`.times-accordion__item`);
+		const firstAgesItem = sectionCatalogue.querySelector(`.js-item${country}`);
+		const firstArtistsItem = firstAgesItem.querySelector('.person-list__btn ');
 
 		accordionItems.forEach(item => {
 			if (!item.classList.contains('js-dnone')) {
@@ -154,6 +157,9 @@ const accordionTabs = () => {
 				item.classList.remove('js-dnone');
 			}
 		});
+
+		if (firstAgesItem) firstAgesItem.click();
+		if (firstArtistsItem) handlePersonButton(firstArtistsItem);
 	};
 
 	const handleTabButtonClick = button => {
@@ -185,12 +191,14 @@ const accordionTabs = () => {
 	const handleAccordionClick = item => {
 		const prevActiveButton = sectionCatalogue.querySelector('.times-accordion__button_active');
 		const prevActiveList = sectionCatalogue.querySelector('.person-list_active');
+		const prevActiveItem = sectionCatalogue.querySelector('.times-accordion__item_active');
 		const currentActiveButton = item.querySelector('.times-accordion__button');
 		const currentActiveList = item.querySelector('.js-personListWrap');
 
 		if (prevActiveButton && prevActiveList) {
 			prevActiveButton.classList.remove('times-accordion__button_active');
 			prevActiveList.classList.remove('person-list_active');
+			prevActiveItem.classList.remove('times-accordion__item_active');
 			prevActiveList.style.maxHeight = '';
 
 			if (prevActiveButton === currentActiveButton) return;
@@ -199,6 +207,7 @@ const accordionTabs = () => {
 		currentActiveButton.classList.add('times-accordion__button_active');
 		currentActiveList.style.maxHeight = currentActiveList.scrollHeight + 'px';
 		currentActiveList.classList.add('person-list_active');
+		item.classList.add('times-accordion__item_active');
 	};
 
 	//ДАННЫЕ СТАТЬИ О ХУДОЖНИКЕ

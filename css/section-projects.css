@@ -104,10 +104,6 @@
 	outline: 2px solid #7943A4;
 }
 
-.section-projects__link:hover {
-	border-color: #9D5CD0;
-}
-
 .section-projects__link:active {
 	border-color: #7943A4;
 	color: #7943A4;
@@ -166,10 +162,6 @@
 
 .partners-slider__button:focus::before {
 	border-color: #000;
-}
-
-.partners-slider__button:hover {
-	background-color: #9D5CD0;
 }
 
 .partners-slider__button:active {
