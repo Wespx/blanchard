@@ -6,22 +6,22 @@ const headerBurgerSearch = () => {
 	const burgerClose = document.querySelector('.js-burgerClose');
 
 	const openMenu = () => {
-		burgerMenu.classList.add('js-transitionMenu');
-		burgerMenu.classList.add('js-openMenu');
+		burgerMenu.classList.add('js-transition-menu');
+		burgerMenu.classList.add('js-open-menu');
 		document.body.style.overflow = 'hidden';
 	};
 
 	const closeMenu = event => {
 		const target = event.target;
 		if (target === burgerMenu || target === burgerClose || target.closest('.navlist__link')) {
-			burgerMenu.classList.add('js-transitionMenu');
-			burgerMenu.classList.remove('js-openMenu');
+			burgerMenu.classList.add('js-transition-menu');
+			burgerMenu.classList.remove('js-open-menu');
 			document.body.style.overflow = '';
 		}
 	};
 
 	const removeMenuTransition = () => {
-		burgerMenu.classList.remove('js-transitionMenu');
+		burgerMenu.classList.remove('js-transition-menu');
 	};
 
 	burgerBtn.addEventListener('click', openMenu);
@@ -32,21 +32,21 @@ const headerBurgerSearch = () => {
 	const searchForm = document.querySelector('.js-searchForm');
 
 	const toggleSearch = () => {
-		if (searchForm.classList.contains('js-openMenu')) {
-			searchForm.classList.add('js-transitionMenu');
-			searchForm.classList.remove('js-openMenu');
-			expandSearch.classList.add('js-changeBtn');
+		if (searchForm.classList.contains('js-open-menu')) {
+			searchForm.classList.add('js-transition-menu');
+			searchForm.classList.remove('js-open-menu');
+			expandSearch.classList.add('js-change-btn');
 			expandSearch.classList.remove('header__search-button_active');
 		} else {
-			searchForm.classList.add('js-transitionMenu');
-			searchForm.classList.add('js-openMenu');
-			expandSearch.classList.add('js-changeBtn');
+			searchForm.classList.add('js-transition-menu');
+			searchForm.classList.add('js-open-menu');
+			expandSearch.classList.add('js-change-btn');
 		}
 	};
 
 	const removeSearchBtnTransform = () => {
-		expandSearch.classList.remove('js-changeBtn');
-		if (searchForm.classList.contains('js-openMenu')) {
+		expandSearch.classList.remove('js-change-btn');
+		if (searchForm.classList.contains('js-open-menu')) {
 			expandSearch.classList.add('header__search-button_active');
 		}
 	};
@@ -146,8 +146,8 @@ const galleryModal = () => {
 	}
 
 	const toggleScrollBlock = () => {
-		if (html.classList.contains('js-scrollBlock')) {
-			html.classList.remove('js-scrollBlock')
+		if (html.classList.contains('js-scroll-block')) {
+			html.classList.remove('js-scroll-block')
 			window.scrollTo(0, scrollPos);
 			html.style.top = '';
 			return;
@@ -155,7 +155,7 @@ const galleryModal = () => {
 
 		scrollPos = window.pageYOffset;
 		html.style.top = -scrollPos + 'px';
-		html.classList.add('js-scrollBlock');
+		html.classList.add('js-scroll-block');
 	};
 
 	const closeModal = e => {
@@ -224,7 +224,7 @@ const adaptivePublicationsCategories = () => {
 	const breakpointMobile = window.matchMedia('(max-width: 767px)');
 	const breakpointDesktop = window.matchMedia('(min-width: 768px)');
 	const categories = document.querySelector('.js-categories');
-	const publicationsCategoriesBtn = document.querySelector('.js-categoriesBtn');
+	const publicationsCategoriesBtn = document.querySelector('.js-categories-btn');
 
 	const showHideAllCategories = () => {
 		const categoriesInput = categories.querySelectorAll('.categories__input');
@@ -417,15 +417,15 @@ const formHandler = () => {
 					setTimeout(() => {
 						title.textContent = 'Заказать обратный звонок';
 						title.classList.remove('feedback-form__title_success');
-					}, 1000);
+					}, 5000);
 				} else {
-					title.textContent = 'Произошла ошибка';
+					title.textContent = 'Произошла ошибка: данные не отправлены';
 					title.classList.add('feedback-form__title_error');
 
 					setTimeout(() => {
 						title.textContent = 'Заказать обратный звонок';
 						title.classList.remove('feedback-form__title_error');
-					}, 1000);
+					}, 5000);
 				}
 			}
 		}
@@ -446,11 +446,11 @@ const formHandler = () => {
 			const label = document.querySelector('[for="phone"]');
 
 			label.classList.add('feedback-form__label_visible');
-			phone.style.outline = '3px solid red';
+			phone.classList.add('feedback-form__input_error');
 			setTimeout(() => {
-				phone.style.outline = '';
-				label.classList.remove('feedback-form__label_visible')
-			}, 1000);
+				phone.classList.remove('feedback-form__input_error');
+				label.classList.remove('feedback-form__label_visible');
+			}, 1500);
 
 			return;
 		}
@@ -459,11 +459,11 @@ const formHandler = () => {
 			const label = document.querySelector('[for="name"]');
 
 			label.classList.add('feedback-form__label_visible');
-			userName.style.outline = '3px solid red';
+			userName.classList.add('feedback-form__input_error');
 			setTimeout(() => {
-				userName.style.outline = '';
+				userName.classList.remove('feedback-form__input_error');
 				label.classList.remove('feedback-form__label_visible');
-			}, 1000);
+			}, 1500);
 
 			return;
 		}

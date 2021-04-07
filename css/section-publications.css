@@ -87,8 +87,8 @@
 	padding-top: 2px;
 	padding-bottom: 4px;
 
-	cursor: pointer;
 	outline: none;
+	cursor: pointer;
 	animation: fade-in 600ms;
 }
 
@@ -204,6 +204,18 @@
 	background-color: rgba(157, 92, 208, 0.5);
 	color: #fff;
 	text-align: center;
+}
+
+.price__input::-webkit-outer-spin-button,
+.price__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price__input,
+.price__input:hover,
+.price__input:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .publications-slider {

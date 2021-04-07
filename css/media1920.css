@@ -177,7 +177,7 @@
 	}
 
 	.section-hero__slider {
-		margin-top: -70px;
+		top: -70px;
 		height: calc(100% + 70px);
 	}
 
@@ -297,9 +297,10 @@
 		width: 31.2%;
 		min-width: 389px;
 		max-width: 500px;
-		padding-top: 303px;
+	}
 
-		background-size: 100% 303px;
+	.events-cards__img {
+		height: 300px;
 	}
 
 	.events-cards__card:not(:nth-child(3n)) {
@@ -337,6 +338,12 @@
 
 	.categories__label {
 		padding: 0;
+	}
+
+	.categories__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.categories__label:hover .categories__text {
@@ -411,10 +418,6 @@
 		background-color: #9D5CD0;
 	}
 
-	.section-contacts__heading {
-		padding: 0 155px;
-	}
-
 	.section-contacts__address-feedback {
 		width: 35.5%;
 	}
@@ -440,6 +443,10 @@
 
 	.feedback-form__button:hover {
 		background-color: #9D5CD0;
+		color: #fff;
+	}
+
+	.feedback-form__button:active {
 		color: #fff;
 	}
 

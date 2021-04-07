@@ -311,7 +311,7 @@
 					</select>
 				</label>
 
-				<div class="section-gallery__slider gallery-slider js-gallerySlider">
+				<div class="section-gallery__slider gallery-slider js-gallery-slider">
 					<div class="gallery-slider__slider-wrap swiper-wrapper">
 						<div class="gallery-slider__slide swiper-slide" tabindex="0">
 							<img src="img/gallery/gallery-1.jpg" alt="Картина К.Малевича 'Женщина с граблями'" class="gallery-slider__img">
@@ -399,9 +399,9 @@
 						</div>
 					</div>
 					<div class="gallery-slider__buttons-pagination-container">
-						<button class="gallery-slider__button gallery-slider__button_prev js-galleryPrev" type="button"></button>
-						<div class="gallery-slider__pagination js-galleryPagination"></div>
-						<button class="gallery-slider__button gallery-slider__button_next js-galleryNext" type="button"></button>
+						<button class="gallery-slider__button gallery-slider__button_prev js-gallery-prev" type="button"></button>
+						<div class="gallery-slider__pagination js-gallery-pagination"></div>
+						<button class="gallery-slider__button gallery-slider__button_next js-gallery-next" type="button"></button>
 					</div>
 				</div>
 
@@ -482,9 +482,11 @@
 					События
 				</h2>
 
-				<div class="section-events__slider-container js-eventsSlider">
+				<div class="section-events__slider-container js-events-slider">
 					<ul class="section-events__list events-cards swiper-wrapper">
-						<li class="events-cards__card events-cards__card_1 swiper-slide js-eventsSliderSlide">
+						<li class="events-cards__card swiper-slide js-events-slider-slide">
+							<img class="events-cards__img" src="img/events/events1.jpg" alt="Книжная гравюра в живом восприятии">
+
 							<div class="events-cards__card-container">
 								<p class="events-cards__location-time">
 									<span class="events-cards__location">Музей им. Щусева</span> с
@@ -503,7 +505,9 @@
 							</div>
 						</li>
 
-						<li class="events-cards__card events-cards__card_2 swiper-slide js-eventsSliderSlide">
+						<li class="events-cards__card swiper-slide js-events-slider-slide">
+							<img class="events-cards__img" src="img/events/events2.jpg" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+
 							<div class="events-cards__card-container">
 								<p class="events-cards__location-time">
 									<span class="events-cards__location">ММОМА</span>
@@ -521,7 +525,9 @@
 							</div>
 						</li>
 
-						<li class="events-cards__card events-cards__card_3 swiper-slide js-eventsSliderSlide">
+						<li class="events-cards__card swiper-slide js-events-slider-slide">
+							<img class="events-cards__img" src="img/events/events3.jpg" alt="Выставка «Формация 2020»">
+
 							<div class="events-cards__card-container">
 								<p class="events-cards__location-time">
 									<span class="events-cards__location">Еврейский музей</span>
@@ -540,7 +546,9 @@
 							</div>
 						</li>
 
-						<li class="events-cards__card events-cards__card_4 swiper-slide js-eventsSliderSlide">
+						<li class="events-cards__card swiper-slide js-events-slider-slide">
+							<img class="events-cards__img" src="img/events/events4.jpg" alt="XXIV Международная биеннале молодого искусства">
+
 							<div class="events-cards__card-container">
 								<p class="events-cards__location-time">
 									<span class="events-cards__location">Третьяковка на Крымском валу</span> с
@@ -558,7 +566,9 @@
 							</div>
 						</li>
 
-						<li class="events-cards__card events-cards__card_5 swiper-slide js-eventsSliderSlide">
+						<li class="events-cards__card swiper-slide js-events-slider-slide">
+							<img class="events-cards__img" src="img/events/events5.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+
 							<div class="events-cards__card-container">
 								<p class="events-cards__location-time">
 									<span class="events-cards__location">ММАМ</span>
@@ -578,10 +588,10 @@
 						</li>
 					</ul>
 
-					<div class="section-events__bullets-container js-eventsPagination"></div>
+					<div class="section-events__bullets-container js-events-pagination"></div>
 				</div>
 
-				<button type="button" class="section-events__btn js-eventsBtn">Все события</button>
+				<button type="button" class="section-events__btn js-events-btn">Все события</button>
 			</div>
 		</section>
 
@@ -594,88 +604,82 @@
 
 					<div class="categories__title">
 						<div class="categories__top-label">Категории</div>
-						<button class="categories__expand-btn js-categoriesBtn"></button>
+						<button class="categories__expand-btn js-categories-btn"></button>
 					</div>
 
 					<div class="section-publications__categories categories js-categories">
 						<div class="categories__container">
-							<div class="categories__col">
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Бестселлеры</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Бестселлеры</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Искусство</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Искусство</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Архитектура</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Архитектура</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox" checked>
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Дизайн</span>
-								</label>
-							</div>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox" checked>
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Дизайн</span>
+							</label>
 
-							<div class="categories__col">
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Мода</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Мода</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Детям</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Детям</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Художественная литература</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Художественная литература</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Публицистика</span>
-								</label>
-							</div>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Публицистика</span>
+							</label>
 
-							<div class="categories__col">
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Путеводители</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Путеводители</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Философия</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Философия</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Учебная литература</span>
-								</label>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Учебная литература</span>
+							</label>
 
-								<label class="categories__label">
-									<input class="categories__input" type="checkbox">
-									<span class="categories__checkbox"></span>
-									<span class="categories__text">Журналы и газеты</span>
-								</label>
-							</div>
+							<label class="categories__label">
+								<input class="categories__input" type="checkbox">
+								<span class="categories__checkbox"></span>
+								<span class="categories__text">Журналы и газеты</span>
+							</label>
 						</div>
 					</div>
 
@@ -693,7 +697,7 @@
 				</div>
 
 				<div class="section-publications__desktop-column-right">
-					<div class="section-publications__slider-container js-publicationsSlider">
+					<div class="section-publications__slider-container js-publications-slider">
 						<div class="section-publications__slider publications-slider swiper-wrapper">
 							<div class="publications-slider__slide swiper-slide">
 								<img class="publications-slider__img" src="img/publications/publications1.jpg" alt="Красная обложка книги 'Искусство цвета'">
@@ -767,9 +771,9 @@
 						</div>
 
 						<div class="publications-slider__buttons-pagination-container">
-							<button class="publications-slider__pagination-button publications-slider__button_prev js-publicationsPrev"></button>
-							<div class="publications-slider__pagination js-publicationsPagination"></div>
-							<button class="publications-slider__pagination-button publications-slider__button_next js-publicationsNext"></button>
+							<button class="publications-slider__pagination-button publications-slider__button_prev js-publications-prev"></button>
+							<div class="publications-slider__pagination js-publications-pagination"></div>
+							<button class="publications-slider__pagination-button publications-slider__button_next js-publications-next"></button>
 						</div>
 					</div>
 				</div>
@@ -821,9 +825,9 @@
 				<h3 class="section-projects__partners-heading">Партнёры проектов:</h3>
 
 				<div class="section-projects__scene">
-					<div class="section-projects__slider partners-slider js-projectsSlider">
-						<button class="partners-slider__button partners-slider__button_prev js-projectsPrev" type="button"></button>
-						<button class="partners-slider__button partners-slider__button_next js-projectsNext" type="button"></button>
+					<div class="section-projects__slider partners-slider js-projects-slider">
+						<button class="partners-slider__button partners-slider__button_prev js-projects-prev" type="button"></button>
+						<button class="partners-slider__button partners-slider__button_next js-projects-next" type="button"></button>
 						<ul class="partners-slider__slider-list swiper-wrapper">
 							<li class="partners-slider__slide swiper-slide">
 								<img src="img/partners/Freelands.jpg" alt="Логотип Freelands Foundation" class="partners-slider__img">
@@ -860,14 +864,16 @@
 
 		<section class="section-contacts main__section-contacts" id="contacts">
 			<div class="container section-contacts__container">
-				<h2 class="section-contacts__heading g-section-heading">
-					Контакты
-				</h2>
+				<div class="container">
+					<h2 class="section-contacts__heading g-section-heading">
+						Контакты
+					</h2>
 
-				<address class="address-feedback__address address-feedback__address_mobile">
-					<div class="address-feedback__title">Шоурум №2</div>
-					Покровский бульвар, дом 24, строение 3
-				</address>
+					<address class="address-feedback__address address-feedback__address_mobile">
+						<h3 class="address-feedback__title">Шоурум №2</h3>
+						Покровский бульвар, дом 24, строение 3
+					</address>
+				</div>
 
 				<div class="section-contacts__map-outer">
 					<div class="section-contacts__map-inner">
@@ -877,7 +883,7 @@
 
 				<div class="section-contacts__address-feedback address-feedback">
 					<address class="address-feedback__address address-feedback__address-768">
-						<div class="address-feedback__title">Шоурум №2</div>
+						<h3 class="address-feedback__title">Шоурум №2</h3>
 						Покровский бульвар, дом 24, строение 3
 					</address>
 
@@ -887,10 +893,10 @@
 						<form action="mail.php" enctype="multipart/form-data" name="client-contacts" method="POST" class="feedback-form" id="feedback-form">
 							<input class="visually-hidden" type="hidden" name="form_subject" value="Заявка на обратную связь Blanchard">
 							<label class="feedback-form__label" for="name">Как вас зовут?</label>
-							<input class="feedback-form__input" id="name" type="text" placeholder="Имя*" name="Имя" required>
+							<input class="feedback-form__input" id="name" type="text" placeholder="Имя*" name="Имя">
 
 							<label class="feedback-form__label" for="phone">Укажите ваш телефон</label>
-							<input class="feedback-form__input" id="phone" type="tel" placeholder="Телефон*" name="Телефон" required>
+							<input class="feedback-form__input" id="phone" type="tel" placeholder="Телефон*" name="Телефон">
 
 							<button type="submit" class="feedback-form__button">Заказать</button>
 						</form>

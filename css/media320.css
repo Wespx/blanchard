@@ -451,12 +451,12 @@
 	}
 
 	.section-contacts__heading {
-		padding: 0 13px;
 		margin-bottom: 12px;
 	}
 
 	.address-feedback__address_mobile {
 		display: block;
+		padding: 0;
 	}
 
 	.address-feedback__address-768 {

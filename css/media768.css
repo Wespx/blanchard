@@ -111,14 +111,13 @@
 
 	.categories__container {
 		display: flex;
+		flex-flow: column wrap;
+
+		max-height: 155px;
 	}
 
 	.categories__label {
 		padding: 0;
-	}
-
-	.categories__col:first-child {
-		margin-right: 57px;
 	}
 
 	.section-publications__desktop-column-left {

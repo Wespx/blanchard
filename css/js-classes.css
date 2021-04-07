@@ -1,12 +1,12 @@
-.js-openMenu {
+.js-open-menu {
 	transform: translateX(0);
 }
 
-.js-transitionMenu {
+.js-transition-menu {
 	transition: transform 0.3s ease-in-out;
 }
 
-.js-changeBtn {
+.js-change-btn {
 	transform: scale(0);
 }
 
@@ -68,7 +68,7 @@
 	pointer-events: auto;
 }
 
-.js-scrollBlock {
+.js-scroll-block {
 	position: fixed;
     right: 0;
     left: 0;

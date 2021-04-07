@@ -6,8 +6,9 @@
 }
 
 .section-contacts__heading {
-	padding: 0 45px;
+	padding: 0;
 	margin-bottom: 15px;
+	margin-left: -3px;
 	width: 100%;
 }
 
@@ -27,6 +28,8 @@
 }
 
 .address-feedback__title {
+	margin: 0;
+
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 36px;
@@ -97,6 +100,12 @@
 
 	color: #999999;
 	font-size: 16px;
+
+	transition: border-color 0.2s ease-in;
+}
+
+.feedback-form__input_error {
+	border-color: #ff0000;
 }
 
 .feedback-form .feedback-form__input:last-of-type {
@@ -128,7 +137,6 @@
 
 .feedback-form__button:active {
 	box-shadow: inset #D1A9F0 0 0 0 2px;
-	color: #fff;
 }
 
 .address-feedback__contacts {

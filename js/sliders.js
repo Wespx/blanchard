@@ -1,17 +1,17 @@
 'use strict';
 
 const sliders = () => {
-	const gallerySlider = new Swiper('.js-gallerySlider', {
+	const gallerySlider = new Swiper('.js-gallery-slider', {
 		direction: 'horizontal',
 		slidesPerColumnFill: 'row',
 
 		navigation: {
-			nextEl: '.js-galleryNext',
-			prevEl: '.js-galleryPrev'
+			nextEl: '.js-gallery-next',
+			prevEl: '.js-gallery-prev'
 		},
 
 		pagination: {
-			el: '.js-galleryPagination',
+			el: '.js-gallery-pagination',
 			type: 'fraction'
 		},
 
@@ -42,13 +42,13 @@ const sliders = () => {
 		}
 	});
 
-	const projectsSlider = new Swiper('.js-projectsSlider', {
+	const projectsSlider = new Swiper('.js-projects-slider', {
 		loop: true,
 		direction: 'horizontal',
 
 		navigation: {
-			nextEl: '.js-projectsNext',
-			prevEl: '.js-projectsPrev'
+			nextEl: '.js-projects-next',
+			prevEl: '.js-projects-prev'
 		},
 
 		breakpoints: {
@@ -84,17 +84,17 @@ const sliders = () => {
 
 	//eventsSlider
 
-	const eventsButton = document.querySelector('.js-eventsBtn');
+	const eventsButton = document.querySelector('.js-events-btn');
 	let eventsSlider;
 
 	const activateEventsSlider = () => {
-		eventsSlider = new Swiper('.js-eventsSlider', {
+		eventsSlider = new Swiper('.js-events-slider', {
 			slidesPerView: 1,
 			spaceBetween: 20,
 			direction: 'horizontal',
 
 			pagination: {
-				el: '.js-eventsPagination',
+				el: '.js-events-pagination',
 				type: 'bullets',
 				bulletActiveClass: 'section-events__bullet_active',
 				bulletClass: 'section-events__bullet',
@@ -109,7 +109,7 @@ const sliders = () => {
 
 	const activateEventsList = () => {
 		const numFirstItems = breakpoint1024.matches ? 2 : 1;
-		const eventListItems = document.querySelectorAll(`.js-eventsSliderSlide`);
+		const eventListItems = document.querySelectorAll(`.js-events-slider-slide`);
 		eventListItems.forEach((elem, i) => {
 			if (i <= numFirstItems) {
 				elem.classList.remove ('js-dnone');
@@ -121,7 +121,7 @@ const sliders = () => {
 	};
 
 	const expandEventsList = () => {
-		const eventListItems = document.querySelectorAll('.js-eventsSliderSlide');
+		const eventListItems = document.querySelectorAll('.js-events-slider-slide');
 		eventListItems.forEach(elem => {
 			elem.classList.remove('js-dnone');
 			eventsButton.classList.add('js-dnone');
@@ -166,16 +166,16 @@ const sliders = () => {
 	let publicationsSlider;
 
 	const activatePublicationsSlider = () => {
-		publicationsSlider = new Swiper('.js-publicationsSlider', {
+		publicationsSlider = new Swiper('.js-publications-slider', {
 			direction: 'horizontal',
 
 			navigation: {
-				nextEl: '.js-publicationsNext',
-				prevEl: '.js-publicationsPrev'
+				nextEl: '.js-publications-next',
+				prevEl: '.js-publications-prev'
 			},
 
 			pagination: {
-				el: '.js-publicationsPagination',
+				el: '.js-publications-pagination',
 				type: 'fraction'
 			},
 

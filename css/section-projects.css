@@ -35,6 +35,7 @@
 
 .tooltip__marker::before {
 	content: 'i';
+	display: block;
 }
 
 .tooltip__outer {
@@ -83,6 +84,7 @@
 .tooltip__marker:hover::before,
 .tooltip__marker:focus::before {
 	content: attr(data-content);
+	transform: translate(0, -1px);
 }
 
 .tooltip__marker:hover ~ .tooltip__outer,
