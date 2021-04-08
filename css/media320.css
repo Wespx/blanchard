@@ -161,7 +161,7 @@
 		justify-content: flex-start;
 		max-width: 290px;
 		height: auto;
-		min-height: 600px;
+		max-height: 80vh;
 	}
 
 	.gallery__modal-img {

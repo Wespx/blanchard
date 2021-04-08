@@ -13,9 +13,9 @@ const accordionTabs = () => {
 	const buttonIT = document.querySelector('.js-tabsIT');
 	const buttonRU = document.querySelector('.js-tabsRU');
 	const buttonBE = document.querySelector('.js-tabsBE');
-	const tabsText = document.querySelector('.js-tabsText');
-	const accordion = document.querySelector('.js-tabsAccordion');
-	const personInfo = document.querySelector('.js-tabsPersonInfo');
+	const tabsText = document.querySelector('.js-tabs-text');
+	const accordion = document.querySelector('.js-tabs-accordion');
+	const personInfo = document.querySelector('.js-tabs-person-info');
 
 	const artistsFR = {country: 'FR'};
 	const artistsDE = {country: 'DE'};
@@ -113,7 +113,7 @@ const accordionTabs = () => {
 					</p>
 
 					<button class="times-accordion__button ${firstActiveButton}"></button>
-					<div class="times-accordion__list-wrap ${firstList} js-personListWrap">
+					<div class="times-accordion__list-wrap ${firstList} js-person-list-wrap">
 						<ul class="times-accordion__list person-list js-tabs${artists.country} js-tabs${age}"></ul>
 					</div>
 				</li>`
@@ -193,7 +193,7 @@ const accordionTabs = () => {
 		const prevActiveList = sectionCatalogue.querySelector('.person-list_active');
 		const prevActiveItem = sectionCatalogue.querySelector('.times-accordion__item_active');
 		const currentActiveButton = item.querySelector('.times-accordion__button');
-		const currentActiveList = item.querySelector('.js-personListWrap');
+		const currentActiveList = item.querySelector('.js-person-list-wrap');
 
 		if (prevActiveButton && prevActiveList) {
 			prevActiveButton.classList.remove('times-accordion__button_active');

@@ -15,6 +15,10 @@ const sliders = () => {
 			type: 'fraction'
 		},
 
+		autoplay: {
+			delay: 5000,
+		},
+
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
@@ -49,6 +53,10 @@ const sliders = () => {
 		navigation: {
 			nextEl: '.js-projects-next',
 			prevEl: '.js-projects-prev'
+		},
+
+		autoplay: {
+			delay: 5000,
 		},
 
 		breakpoints: {
@@ -177,6 +185,10 @@ const sliders = () => {
 			pagination: {
 				el: '.js-publications-pagination',
 				type: 'fraction'
+			},
+
+			autoplay: {
+				delay: 5000,
 			},
 
 			breakpoints: {

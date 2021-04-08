@@ -2,8 +2,8 @@
 
 const headerBurgerSearch = () => {
 	const burgerBtn = document.querySelector('.js-burger');
-	const burgerMenu = document.querySelector('.js-burgerMenu');
-	const burgerClose = document.querySelector('.js-burgerClose');
+	const burgerMenu = document.querySelector('.js-burger-menu');
+	const burgerClose = document.querySelector('.js-burger-close');
 
 	const openMenu = () => {
 		burgerMenu.classList.add('js-transition-menu');
@@ -28,7 +28,7 @@ const headerBurgerSearch = () => {
 	burgerMenu.addEventListener('transitionend', removeMenuTransition);
 	burgerMenu.addEventListener('click', closeMenu);
 
-	const expandSearch = document.querySelector('.js-expandSearchBtn');
+	const expandSearch = document.querySelector('.js-expand-search-btn');
 	const searchForm = document.querySelector('.js-searchForm');
 
 	const toggleSearch = () => {
@@ -67,8 +67,8 @@ const headerStyleMenus = () => {
 		const item = target.closest('.menu-style__item');
 
 		if (!item) {
-			prevActive().classList.remove('menu-style__item_active');
-			document.removeEventListener('click', closeStyleList);
+			if (prevActive()) prevActive().classList.remove('menu-style__item_active');
+			document.body.removeEventListener('click', closeStyleList);
 		}
 	};
 
@@ -83,7 +83,7 @@ const headerStyleMenus = () => {
 
 			item.classList.toggle('menu-style__item_active');
 
-			document.addEventListener('click', closeStyleList);
+			document.body.addEventListener('click', closeStyleList);
 		}
 	};
 
@@ -93,7 +93,7 @@ const headerStyleMenus = () => {
 headerStyleMenus();
 
 const gallerySelect = () => {
-	const element = document.querySelector('.js-gallerySelect');
+	const element = document.querySelector('.js-gallery-select');
 	const choices = new Choices(element, {
 		searchEnabled: false,
 		itemSelectText: '',
@@ -293,7 +293,7 @@ const adaptivePublicationsCategories = () => {
 adaptivePublicationsCategories();
 
 const adaptiveTooltips = () => {
-	const tooltipMarkers = document.querySelectorAll('.js-projectsTooltipMarker');
+	const tooltipMarkers = document.querySelectorAll('js-projects-tooltip-marker');
 
 	const checkPosition = (e, elem) => {
 		let tooltip;
@@ -301,7 +301,7 @@ const adaptiveTooltips = () => {
 		if (elem) {
 			tooltip = elem;
 		} else {
-			tooltip = e.target.parentNode.querySelector('.js-projectsTooltip');
+			tooltip = e.target.parentNode.querySelector('js-projects-tooltip');
 		}
 
 		const box = tooltip.getBoundingClientRect();
@@ -328,7 +328,7 @@ const adaptiveTooltips = () => {
 	});
 
 	document.addEventListener('DOMContentLoaded', () => {
-		const tooltips = document.querySelectorAll('.js-projectsTooltip');
+		const tooltips = document.querySelectorAll('js-projects-tooltip');
 		tooltips.forEach(elem => checkPosition('', elem));
 	});
 };

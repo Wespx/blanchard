@@ -338,6 +338,13 @@
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: cover;
+	visibility: hidden;
+
+	transition: visibility 0.3s ease-in-out;
+}
+
+.menu-style__item_active .style-list__item {
+	visibility: visible;
 }
 
 .style-list__item:not(:last-child) {

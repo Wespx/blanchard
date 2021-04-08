@@ -40,7 +40,7 @@ const smoothScroll = () => {
 		}
 
 		if (e.target.classList.contains('person-list__btn') && document.documentElement.clientWidth < 1024) {
-			scrollAnimation('#personArticle', 25);
+			scrollAnimation('#person-article', 25);
 		}
 	});
 };

@@ -204,6 +204,14 @@
 	background-color: rgba(157, 92, 208, 0.5);
 	color: #fff;
 	text-align: center;
+	outline: 2px solid transparent;
+
+	transition: outline 0.2s ease-in;
+}
+
+.price__input:hover,
+.price__input:focus {
+	outline: 2px solid #D1A9F0;
 }
 
 .price__input::-webkit-outer-spin-button,
