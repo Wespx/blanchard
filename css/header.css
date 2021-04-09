@@ -238,10 +238,6 @@
 	position: relative;
 }
 
-.menu-style__item:not(:last-child) {
-	margin-right: 93px;
-}
-
 .menu-style__button {
 	position: relative;
 	padding: 0;

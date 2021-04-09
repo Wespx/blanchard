@@ -20,8 +20,8 @@ const headerBurgerSearch = () => {
 		}
 	};
 
-	const removeMenuTransition = () => {
-		burgerMenu.classList.remove('js-transition-menu');
+	const removeMenuTransition = e => {
+		e.target.classList.remove('js-transition-menu');
 	};
 
 	burgerBtn.addEventListener('click', openMenu);
@@ -293,7 +293,8 @@ const adaptivePublicationsCategories = () => {
 adaptivePublicationsCategories();
 
 const adaptiveTooltips = () => {
-	const tooltipMarkers = document.querySelectorAll('js-projects-tooltip-marker');
+	const tooltipMarkers = document.querySelectorAll('.js-projects-tooltip-marker');
+	const tooltips = document.querySelectorAll('.js-projects-tooltip');
 
 	const checkPosition = (e, elem) => {
 		let tooltip;
@@ -301,7 +302,7 @@ const adaptiveTooltips = () => {
 		if (elem) {
 			tooltip = elem;
 		} else {
-			tooltip = e.target.parentNode.querySelector('js-projects-tooltip');
+			tooltip = e.target.parentNode.querySelector('.js-projects-tooltip');
 		}
 
 		const box = tooltip.getBoundingClientRect();
@@ -328,7 +329,10 @@ const adaptiveTooltips = () => {
 	});
 
 	document.addEventListener('DOMContentLoaded', () => {
-		const tooltips = document.querySelectorAll('js-projects-tooltip');
+		tooltips.forEach(elem => checkPosition('', elem));
+	});
+
+	window.addEventListener('resize', () => {
 		tooltips.forEach(elem => checkPosition('', elem));
 	});
 };
@@ -391,9 +395,9 @@ const maskPhone = (masked = '+7 (___) ___-__-__') => {
 		}
 	};
 
-	elem.addEventListener("input", mask);
-	elem.addEventListener("focus", mask);
-	elem.addEventListener("blur", mask);
+	elem.addEventListener('input', mask);
+	elem.addEventListener('focus', mask);
+	elem.addEventListener('blur', mask);
 
 	elem.setAttribute('autocomplete', 'off');
 };
