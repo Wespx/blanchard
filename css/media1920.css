@@ -513,6 +513,14 @@
 		width: 1150px;
 	}
 
+	.section-contacts__heading-container {
+		max-width: none;
+	}
+
+	.section-contacts__heading {
+		margin: 0 auto;
+	}
+
 	.address-feedback {
 		padding-left: 142px;
 		padding-right: 40px;

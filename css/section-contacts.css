@@ -10,6 +10,7 @@
 	margin-bottom: 15px;
 	margin-left: -3px;
 	width: 100%;
+	max-width: 1607px;
 }
 
 .address-feedback {
@@ -22,9 +23,12 @@
 	margin-bottom: 28px;
 
 	font-size: 16px;
-	font-style: normal;
 	line-height: 32px;
 	color: #333333;
+}
+
+.address-feedback__address-text {
+	font-style: normal;
 }
 
 .address-feedback__title {
